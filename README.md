@@ -6,7 +6,7 @@ Knowlege distillation is the process of transfering knowledge from a large model
 
 The teacher model is first of all trained to ensure a high accuracy or low error, then the student model is also trained(shallow or deep). The distiller class in this file shows the knowledge distillation process. I used image augmentation methods to improve accuracy of all models and i also used pretrained models in the last phase.
 
-![image](https://user-images.githubusercontent.com/98299478/235972065-8b901605-0a27-4ae0-96ca-2ddd87b9d2fc.png)
+![image](https://user-images.githubusercontent.com/98299478/235972789-e2922757-0220-474e-998a-a62682e26f7c.png)
 
 The table above shows the result of each model. I realized that it is always a good option to always train the teacher very well before distilling the knowledge to a student. As shown, the teacher model had a poor result, hence it affected the result of the distiller. A good practice is to train for longer epochs, restructure the architecture or even do some hyperparameter tuning to ensure the teacher is well trained.
 
